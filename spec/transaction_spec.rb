@@ -7,9 +7,9 @@ describe 'Transaction' do
 
     my_hash = {
       date: Time.now.strftime("%d/%m/%Y"),
+      amount: "%.2f" % 20,
       type: "Withdrawal",
-      amount: 20,
-      balance: 20
+      balance: "%.2f" % 20
     }
 
 

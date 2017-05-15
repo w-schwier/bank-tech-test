@@ -1,13 +1,11 @@
 class Transaction
 
-  attr_reader :amount, :type, :balance
-
   def self.create(amount, type, balance)
     {
       date: Time.now.strftime("%d/%m/%Y"),
-      amount: amount,
+      amount: "%.2f" % amount,
       type: type,
-      balance: balance
+      balance: "%.2f" % balance
     }
   end
 end
